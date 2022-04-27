@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "LA MISCELANEA C/1.0.0": {
+        "runtime": {
+          "LA MISCELANEA C.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LA MISCELANEA C/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,15 @@
+C:\Users\Andres\Escritorio\VISUAL\LA MISCELANEA C\bin\Debug\net6.0\LA MISCELANEA C.exe
+C:\Users\Andres\Escritorio\VISUAL\LA MISCELANEA C\bin\Debug\net6.0\LA MISCELANEA C.deps.json
+C:\Users\Andres\Escritorio\VISUAL\LA MISCELANEA C\bin\Debug\net6.0\LA MISCELANEA C.runtimeconfig.json
+C:\Users\Andres\Escritorio\VISUAL\LA MISCELANEA C\bin\Debug\net6.0\LA MISCELANEA C.dll
+C:\Users\Andres\Escritorio\VISUAL\LA MISCELANEA C\bin\Debug\net6.0\LA MISCELANEA C.pdb
+C:\Users\Andres\Escritorio\VISUAL\LA MISCELANEA C\obj\Debug\net6.0\LA MISCELANEA C.csproj.AssemblyReference.cache
+C:\Users\Andres\Escritorio\VISUAL\LA MISCELANEA C\obj\Debug\net6.0\LA MISCELANEA C.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andres\Escritorio\VISUAL\LA MISCELANEA C\obj\Debug\net6.0\LA MISCELANEA C.AssemblyInfoInputs.cache
+C:\Users\Andres\Escritorio\VISUAL\LA MISCELANEA C\obj\Debug\net6.0\LA MISCELANEA C.AssemblyInfo.cs
+C:\Users\Andres\Escritorio\VISUAL\LA MISCELANEA C\obj\Debug\net6.0\LA MISCELANEA C.csproj.CoreCompileInputs.cache
+C:\Users\Andres\Escritorio\VISUAL\LA MISCELANEA C\obj\Debug\net6.0\LA MISCELANEA C.dll
+C:\Users\Andres\Escritorio\VISUAL\LA MISCELANEA C\obj\Debug\net6.0\refint\LA MISCELANEA C.dll
+C:\Users\Andres\Escritorio\VISUAL\LA MISCELANEA C\obj\Debug\net6.0\LA MISCELANEA C.pdb
+C:\Users\Andres\Escritorio\VISUAL\LA MISCELANEA C\obj\Debug\net6.0\LA MISCELANEA C.genruntimeconfig.cache
+C:\Users\Andres\Escritorio\VISUAL\LA MISCELANEA C\obj\Debug\net6.0\ref\LA MISCELANEA C.dll
