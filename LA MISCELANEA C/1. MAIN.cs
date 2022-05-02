@@ -15,7 +15,6 @@ namespace LA_MISCELANEA_C
             do
             {
                 Console.Clear();
-                Console.WriteLine();
                 Console.WriteLine("----------MISCELANEA----------");
                 Console.WriteLine("");
                 Console.WriteLine(" 1. OPERADORES \n 2. CONDICIONALES" +
@@ -40,13 +39,13 @@ namespace LA_MISCELANEA_C
 
                     case 3:
                         {
-                            //Bucles();
+                            Bucles.bucles();
                         }
                         break;
 
                     case 4:
                         {
-                            // Arreglos();
+                            Arreglos.arreglos();
                         }
                         break;
                     case 9:
