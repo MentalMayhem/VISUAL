@@ -22,7 +22,7 @@ namespace LA_MISCELANEA_C
                     "\n 4. imprimir por pantalla los cuadrados de los números del 1 al 30 \n 5. Sumar los cuadrados de los cien primeros números naturales");
                 Console.WriteLine(" 6. Según dos números naturales, el primero menor que el segundo, generar y mostrar todos los números comprendidos entre ellos" +
                     " en secuencia ascendente. \n 7. Sumar todos los números que se digitan por teclado mientras no sea cero." +
-                    "\n 8. Promedio de tres números");
+                    "");
                 Console.WriteLine(" 9. SALIR");
 
                 ElecOp = Convert.ToInt32(Console.ReadLine());
@@ -83,56 +83,101 @@ namespace LA_MISCELANEA_C
 
         public static void Uno()
         {
-            Console.WriteLine("Los múltiplos de 3 son: ");
-            for (int i = 3; i < 100; i += 3)
+            try
             {
-                Console.WriteLine(i);
+                Console.WriteLine("Los múltiplos de 3 son: ");
+                for (int i = 3; i < 100; i += 3)
+                {
+                    Console.WriteLine(i);
+                }
             }
+            catch (FormatException error)
+            {
+                Console.WriteLine("ALGO HA SALIDO MAL " + error);
+                throw;
+            }
+           
 
         }
 
         public static void Dos()
         {
-            Console.WriteLine("Estos son los números impares entre 0 y 100:");
-
-            for (int i = 1; i < 100; i += 2)
+            try
             {
-                Console.WriteLine(i);
+                Console.WriteLine("Estos son los números impares entre 0 y 100:");
+
+                for (int i = 1; i < 100; i += 2)
+                {
+                    Console.WriteLine(i);
+                }
             }
+            catch (FormatException error)
+            {
+                Console.WriteLine("ALGO HA SALIDO MAL " + error);
+                throw;
+            }
+               
         }
 
         public static void Tres()
         {
-            Console.WriteLine("Estos son los números pares entre 1 y 100:");
-
-            for (int i = 2; i < 100; i += 2)
+            try
             {
-                Console.WriteLine(i);
+                Console.WriteLine("Estos son los números pares entre 1 y 100:");
+
+                for (int i = 2; i < 100; i += 2)
+                {
+                    Console.WriteLine(i);
+                }
             }
+            catch (FormatException error)
+            {
+                Console.WriteLine("ALGO HA SALIDO MAL " + error);
+                throw;
+            }
+            
         }
 
         public static void Cuatro()
         {
-            Console.WriteLine("Estos son los cuadrados de los números del uno al treinta:");
-
-            for (int i = 1; i <= 30; i++)
+            try
             {
-                int cuadrados = (int)Math.Pow(i, 2);
-                Console.WriteLine($"El cuadrado de {i} es {cuadrados}");
+                Console.WriteLine("Estos son los cuadrados de los números del uno al treinta:");
+
+                for (int i = 1; i <= 30; i++)
+                {
+                    int cuadrados = (int)Math.Pow(i, 2);
+                    Console.WriteLine($"El cuadrado de {i} es {cuadrados}");
+                }
             }
+            catch (FormatException error)
+            {
+                Console.WriteLine("ALGO HA SALIDO MAL " + error);
+                throw;
+            }
+            
         }
 
         public static void Cinco()
         {
-            Console.WriteLine("Esta es la suma de los cuadrados de los cien primeros  naturales");
-            int suma = 0;
-            for (int i = 1; i <= 100; i++)
+            try
             {
-                int cuadrado = (int)Math.Pow(i, 2);
-                suma = suma + cuadrado;
-                Console.WriteLine($"El cuadrado de {i} es {cuadrado}");
+                Console.WriteLine("Esta es la suma de los cuadrados de los cien primeros  naturales");
+                int suma = 0;
+                for (int i = 1; i <= 100; i++)
+                {
+                    int cuadrado = (int)Math.Pow(i, 2);
+                    suma = suma + cuadrado;
+                    Console.WriteLine($"El cuadrado de {i} es {cuadrado}");
+                }
+                Console.WriteLine($"El resultado de la suma es {suma}");
             }
-            Console.WriteLine($"El resultado de la suma es {suma}");
+            catch (FormatException error)
+            {
+                Console.WriteLine(error);
+                throw;
+            }
+            
         }
 
         public static void Seis()
@@ -144,9 +189,9 @@ namespace LA_MISCELANEA_C
             {
                 num1 = Convert.ToInt32(Console.ReadLine());
             }
-            catch (FormatException e)
+            catch (FormatException error)
             {
-                Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
+                Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", error);
                 Console.ReadKey();
             }
             Console.WriteLine("Ingrese el segundo número");
@@ -155,9 +200,9 @@ namespace LA_MISCELANEA_C
             {
                 num2 = Convert.ToInt32(Console.ReadLine());
             }
-            catch (FormatException e)
+            catch (FormatException error)
             {
-                Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
+                Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", error);
                 Console.ReadKey();
             }
             Console.WriteLine($"Los números comprendidos entre {num1} y {num2} son:");
@@ -174,13 +219,13 @@ namespace LA_MISCELANEA_C
             {
                 Console.WriteLine("Ingrese el número que va a sumar");
                 numero = 0;
-                try
+              try
                 {
                     numero = Convert.ToInt32(Console.ReadLine());
                 }
-                catch (FormatException e)
+              catch (FormatException error)
                 {
-                    Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", e);
+                    Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", error);
                     Console.ReadKey();
                 }
                 suma = suma + numero;

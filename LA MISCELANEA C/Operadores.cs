@@ -87,89 +87,161 @@ namespace LA_MISCELANEA_C
 
         static void Uno()
         {
-            double resul;
-            Console.WriteLine("Ingrese la base del triangulo");
-            double bas = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Ingrese la altura del triangulo");
-            double alt = Convert.ToDouble(Console.ReadLine());
-            resul = (bas * alt) / 2;
-            Console.WriteLine("El resultado es:" + resul);
+            try
+            {
+                double resul;
+                Console.WriteLine("Ingrese la base del triangulo");
+                double bas = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Ingrese la altura del triangulo");
+                double alt = Convert.ToDouble(Console.ReadLine());
+                resul = (bas * alt) / 2;
+                Console.WriteLine("El resultado es:" + resul);
+            }
+            catch (FormatException error)
+            {
+                Console.WriteLine("ALGO HA SALIDO MAL ", error);
+                throw;
+            }
+            
         }
 
         static void Dos()
         {
-            double resul;
-            Console.WriteLine("Ingrese el primer numero");
-            double num1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Ingrese el segundo numero");
-            double num2 = Convert.ToDouble(Console.ReadLine());
-            resul = num1 + num2;
-            Console.WriteLine("El resultado es:" + resul);
+            try
+            {
+                double resul;
+                Console.WriteLine("Ingrese el primer numero");
+                double num1 = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Ingrese el segundo numero");
+                double num2 = Convert.ToDouble(Console.ReadLine());
+                resul = num1 + num2;
+                Console.WriteLine("El resultado es:" + resul);
+            }
+            catch (FormatException error)
+            {
+                Console.WriteLine("ALGO HA SALIDO MAL ", error);
+              
+            }
+            
         }
 
         static void Tres()
         {
-            double resul;
-            Console.WriteLine("Ingrese el numero");
-            double num1 = Convert.ToDouble(Console.ReadLine());
-            resul = num1 * num1;
-            Console.WriteLine("El resultado es:" + resul);
+            try
+            {
+                double resul;
+                Console.WriteLine("Ingrese el numero");
+                double num1 = Convert.ToDouble(Console.ReadLine());
+                resul = num1 * num1;
+                Console.WriteLine("El resultado es:" + resul);
+            }
+            catch (FormatException error)
+            {
+                Console.WriteLine("ALGO HA SALIDO MAL ", error);
+                throw;
+            }
+           
         }
 
         static void Cuatro()
         {
-            double resul;
-            Console.WriteLine("Ingrese el numero de euros que desea convertir");
-            double valor1 = Convert.ToDouble(Console.ReadLine());
-            resul = valor1 * 0.94;
-            Console.WriteLine("Euros = €" + valor1 + " Equivalen a $" + resul + " Dolares");
+            try
+            {
+                double resul;
+                Console.WriteLine("Ingrese el numero de euros que desea convertir");
+                double valor1 = Convert.ToDouble(Console.ReadLine());
+                resul = valor1 * 0.94;
+                Console.WriteLine("Euros = €" + valor1 + " Equivalen a $" + resul + " Dolares");
+            }
+            catch (FormatException error)
+            {
+                Console.WriteLine("ALGO HA SALIDO MAL ", error);
+                throw;
+            }
+           
         }
 
         static void Cinco()
         {
-            double resul1, resul2;
-            Console.WriteLine("Ingrese un lado del cuadrado");
-            double lad = Convert.ToDouble(Console.ReadLine());
-            resul1 = Math.Pow(lad, 2);
-            resul2 = lad * 4;
-            Console.WriteLine("El area del cuadrado es: " + resul1);
-            Console.WriteLine("El perimetro del cuadrado es: " + resul2);
+            try
+            {
+                double resul1, resul2;
+                Console.WriteLine("Ingrese un lado del cuadrado");
+                double lad = Convert.ToDouble(Console.ReadLine());
+                resul1 = Math.Pow(lad, 2);
+                resul2 = lad * 4;
+                Console.WriteLine("El area del cuadrado es: " + resul1);
+                Console.WriteLine("El perimetro del cuadrado es: " + resul2);
+            }
+            catch (FormatException error)
+            {
+                Console.WriteLine("ALGO HA SALIDO MAL ", error);
+                throw;
+            }
+           
         }
 
         static void Seis()
         {
-            double area, vol;
-            Console.WriteLine("Ingrese el radio del cilindro");
-            double rad = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Ingrese la altura del cilindro");
-            double altura = Convert.ToDouble(Console.ReadLine());
-            vol = Math.PI * Math.Pow(rad, 2) * altura;
-            area = (2 * (Math.PI) * rad * altura) + (2 * (Math.PI) * Math.Pow(rad, 2));
-            Console.WriteLine("El volumen del cilindro es: " + vol);
-            Console.WriteLine("El area del cilindro es: " + area);
+            try
+            {
+                double area, vol;
+                Console.WriteLine("Ingrese el radio del cilindro");
+                double rad = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Ingrese la altura del cilindro");
+                double altura = Convert.ToDouble(Console.ReadLine());
+                vol = Math.PI * Math.Pow(rad, 2) * altura;
+                area = (2 * (Math.PI) * rad * altura) + (2 * (Math.PI) * Math.Pow(rad, 2));
+                Console.WriteLine("El volumen del cilindro es: " + vol);
+                Console.WriteLine("El area del cilindro es: " + area);
+            }
+            catch (FormatException error)
+            {
+                Console.WriteLine("ALGO HA SALIDO MAL ", error);
+                throw;
+            }
+            
         }
 
         static void Siete()
         {
-            Console.WriteLine("Ingrese el radio del circulo");
-            double radio = Convert.ToDouble(Console.ReadLine());
-            double circu = 2 * Math.PI * radio;
-            double area = Math.PI * Math.Pow(radio, 2);
-            Console.WriteLine("La longitud de la circunferencia es: " + circu);
-            Console.WriteLine("El area del circulo es: " + area);
+            try
+            {
+                Console.WriteLine("Ingrese el radio del circulo");
+                double radio = Convert.ToDouble(Console.ReadLine());
+                double circu = 2 * Math.PI * radio;
+                double area = Math.PI * Math.Pow(radio, 2);
+                Console.WriteLine("La longitud de la circunferencia es: " + circu);
+                Console.WriteLine("El area del circulo es: " + area);
+            }
+            catch (FormatException error)
+            {
+                Console.WriteLine("ALGO HA SALIDO MAL ", error);
+                throw;
+            }
+            
         }
 
         static void Ocho()
         {
-            double resul1;
-            Console.WriteLine("Ingrese el primer numero");
-            double numero1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Ingrese el segundo numero");
-            double numero2 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Ingrese el tercer numero");
-            double numero3 = Convert.ToDouble(Console.ReadLine());
-            resul1 = (numero1 + numero2 + numero3) / 3;
-            Console.WriteLine("El promedio de los tres numeros es: " + resul1);
+            try
+            {
+                double resul1;
+                Console.WriteLine("Ingrese el primer numero");
+                double numero1 = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Ingrese el segundo numero");
+                double numero2 = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Ingrese el tercer numero");
+                double numero3 = Convert.ToDouble(Console.ReadLine());
+                resul1 = (numero1 + numero2 + numero3) / 3;
+                Console.WriteLine("El promedio de los tres numeros es: " + resul1);
+            }
+            catch (FormatException error)
+            {
+                Console.WriteLine("ALGO HA SALIDO MAL ", error);
+                
+            }
+            
         }
 
     }

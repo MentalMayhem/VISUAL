@@ -86,6 +86,8 @@ namespace LA_MISCELANEA_C
 
             public static void Uno()
             {
+            try
+            {
                 Console.WriteLine("Ingrese un numero entero");
                 double numeroCon = Convert.ToDouble(Console.ReadLine());
                 if (numeroCon > 0)
@@ -96,12 +98,21 @@ namespace LA_MISCELANEA_C
                 {
                     Console.WriteLine($"El numero {numeroCon} es negativo");
                 }
+            }
+            catch (Exception error)
+            {
+                Console.WriteLine("ALGO HA SALIDO MAL " + error);
+                
+                throw;
+            }
+              
 
             }
 
             public static void Dos()
             {
-
+            try
+            {
                 Console.WriteLine("Ingrese el primer numero");
                 double num1 = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Ingrese el segundo numero");
@@ -118,10 +129,20 @@ namespace LA_MISCELANEA_C
                 {
                     Console.WriteLine($"El numero {num1} es igual que {num2}");
                 }
+            }
+            catch (Exception error)
+            {
+                Console.WriteLine("ALGO HA SALIDO MAL " + error);
+              
+                throw;
+            }
+                
 
             }
 
             public static void Tres()
+            {
+            try
             {
                 Console.WriteLine("Ingrese el primer numero");
                 double num1 = Convert.ToDouble(Console.ReadLine());
@@ -157,8 +178,18 @@ namespace LA_MISCELANEA_C
                     Console.WriteLine($"El numero es menor {num3}");
                 }
             }
+            catch (Exception error)
+            {
+                Console.WriteLine("ALGO HA SALIDO MAL " + error);
+                
+                throw;
+            }
+               
+            }
 
             public static void Cuatro()
+            {
+            try
             {
                 double resul = 0;
                 Console.WriteLine("Ingrese el primer numero");
@@ -175,10 +206,20 @@ namespace LA_MISCELANEA_C
                     resul = num1 - num2;
                     Console.WriteLine($"{num1} - {num2} = {resul}");
                 }
+            }
+            catch (Exception error)
+            {
+                Console.WriteLine("ALGO HA SALIDO MAL " + error);
+        
+                throw;
+            }
+                
 
             }
 
             public static void Cinco()
+            {
+            try
             {
                 double resul = 0;
                 Console.WriteLine("Ingrese el primer numero");
@@ -195,8 +236,18 @@ namespace LA_MISCELANEA_C
                     Console.WriteLine("La división no es posible");
                 }
             }
+            catch (Exception error)
+            {
+                Console.WriteLine("ALGO HA SALIDO MAL " + error);
+     
+                throw;
+            }
+               
+            }
 
             public static void Seis()
+            {
+            try
             {
                 double resul = 0;
                 Console.WriteLine("Ingrese el primer numero");
@@ -214,8 +265,18 @@ namespace LA_MISCELANEA_C
                     Console.WriteLine($"{num1} * {num2} = {resul}");
                 }
             }
+            catch (Exception error)
+            {
+                Console.WriteLine("ALGO HA SALIDO MAL " + error);
+                Console.ReadKey();
+                throw;
+            }
+                
+            }
 
             public static void Siete()
+            {
+            try
             {
                 Console.WriteLine("Ingrese el año");
                 double anio = Convert.ToDouble(Console.ReadLine());
@@ -228,6 +289,14 @@ namespace LA_MISCELANEA_C
                 {
                     Console.WriteLine("no es bisiesto {0} \n", anio);
                 }
+            }
+            catch (Exception error)
+            {
+                Console.WriteLine("ALGO HA SALIDO MAL " + error);
+               
+                throw;
+            }
+              
             }
 
     }
