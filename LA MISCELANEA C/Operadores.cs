@@ -100,7 +100,7 @@ namespace LA_MISCELANEA_C
             catch (FormatException error)
             {
                 Console.WriteLine("ALGO HA SALIDO MAL ", error);
-                throw;
+               
             }
             
         }
@@ -120,7 +120,6 @@ namespace LA_MISCELANEA_C
             catch (FormatException error)
             {
                 Console.WriteLine("ALGO HA SALIDO MAL ", error);
-              
             }
             
         }
@@ -138,7 +137,7 @@ namespace LA_MISCELANEA_C
             catch (FormatException error)
             {
                 Console.WriteLine("ALGO HA SALIDO MAL ", error);
-                throw;
+
             }
            
         }
@@ -156,7 +155,6 @@ namespace LA_MISCELANEA_C
             catch (FormatException error)
             {
                 Console.WriteLine("ALGO HA SALIDO MAL ", error);
-                throw;
             }
            
         }
@@ -176,7 +174,7 @@ namespace LA_MISCELANEA_C
             catch (FormatException error)
             {
                 Console.WriteLine("ALGO HA SALIDO MAL ", error);
-                throw;
+                
             }
            
         }
@@ -198,7 +196,7 @@ namespace LA_MISCELANEA_C
             catch (FormatException error)
             {
                 Console.WriteLine("ALGO HA SALIDO MAL ", error);
-                throw;
+                
             }
             
         }
@@ -217,7 +215,6 @@ namespace LA_MISCELANEA_C
             catch (FormatException error)
             {
                 Console.WriteLine("ALGO HA SALIDO MAL ", error);
-                throw;
             }
             
         }

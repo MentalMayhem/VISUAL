@@ -99,11 +99,9 @@ namespace LA_MISCELANEA_C
                     Console.WriteLine($"El numero {numeroCon} es negativo");
                 }
             }
-            catch (Exception error)
+            catch (FormatException error)
             {
                 Console.WriteLine("ALGO HA SALIDO MAL " + error);
-                
-                throw;
             }
               
 
@@ -130,11 +128,10 @@ namespace LA_MISCELANEA_C
                     Console.WriteLine($"El numero {num1} es igual que {num2}");
                 }
             }
-            catch (Exception error)
+            catch (FormatException error)
             {
                 Console.WriteLine("ALGO HA SALIDO MAL " + error);
-              
-                throw;
+
             }
                 
 
@@ -178,11 +175,9 @@ namespace LA_MISCELANEA_C
                     Console.WriteLine($"El numero es menor {num3}");
                 }
             }
-            catch (Exception error)
+            catch (FormatException error)
             {
                 Console.WriteLine("ALGO HA SALIDO MAL " + error);
-                
-                throw;
             }
                
             }
@@ -207,11 +202,9 @@ namespace LA_MISCELANEA_C
                     Console.WriteLine($"{num1} - {num2} = {resul}");
                 }
             }
-            catch (Exception error)
+            catch (FormatException error)
             {
                 Console.WriteLine("ALGO HA SALIDO MAL " + error);
-        
-                throw;
             }
                 
 
@@ -236,11 +229,9 @@ namespace LA_MISCELANEA_C
                     Console.WriteLine("La división no es posible");
                 }
             }
-            catch (Exception error)
+            catch (FormatException error)
             {
                 Console.WriteLine("ALGO HA SALIDO MAL " + error);
-     
-                throw;
             }
                
             }
@@ -265,11 +256,10 @@ namespace LA_MISCELANEA_C
                     Console.WriteLine($"{num1} * {num2} = {resul}");
                 }
             }
-            catch (Exception error)
+            catch (FormatException error)
             {
                 Console.WriteLine("ALGO HA SALIDO MAL " + error);
                 Console.ReadKey();
-                throw;
             }
                 
             }
@@ -290,11 +280,9 @@ namespace LA_MISCELANEA_C
                     Console.WriteLine("no es bisiesto {0} \n", anio);
                 }
             }
-            catch (Exception error)
+            catch (FormatException error)
             {
                 Console.WriteLine("ALGO HA SALIDO MAL " + error);
-               
-                throw;
             }
               
             }
