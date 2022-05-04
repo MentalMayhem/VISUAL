@@ -8,7 +8,7 @@ namespace LA_MISCELANEA_C
 {
     internal class Bucles
     {
-        public static void bucles ()
+        public void bucles ()
         {
             int ElecOp;
 
@@ -81,7 +81,8 @@ namespace LA_MISCELANEA_C
             Console.ReadKey();
         }
 
-        public static void Uno()
+        Variables variables = new Variables(0, 0, 0, 0);
+        public void Uno()
         {
             try
             {
@@ -91,16 +92,16 @@ namespace LA_MISCELANEA_C
                     Console.WriteLine(i);
                 }
             }
-            catch (FormatException error)
+            catch (FormatException)
             {
-                Console.WriteLine("ALGO HA SALIDO MAL " + error);
+                Console.WriteLine("ALGO HA SALIDO MAL ");
 
             }
            
 
         }
 
-        public static void Dos()
+        public void Dos()
         {
             try
             {
@@ -111,15 +112,15 @@ namespace LA_MISCELANEA_C
                     Console.WriteLine(i);
                 }
             }
-            catch (FormatException error)
+            catch (FormatException)
             {
-                Console.WriteLine("ALGO HA SALIDO MAL " + error);
+                Console.WriteLine("ALGO HA SALIDO MAL ");
 
             }
                
         }
 
-        public static void Tres()
+        public void Tres()
         {
             try
             {
@@ -130,14 +131,14 @@ namespace LA_MISCELANEA_C
                     Console.WriteLine(i);
                 }
             }
-            catch (FormatException error)
+            catch (FormatException)
             {
-                Console.WriteLine("ALGO HA SALIDO MAL " + error);
+                Console.WriteLine("ALGO HA SALIDO MAL ");
             }
             
         }
 
-        public static void Cuatro()
+        public void Cuatro()
         {
             try
             {
@@ -149,14 +150,14 @@ namespace LA_MISCELANEA_C
                     Console.WriteLine($"El cuadrado de {i} es {cuadrados}");
                 }
             }
-            catch (FormatException error)
+            catch (FormatException)
             {
-                Console.WriteLine("ALGO HA SALIDO MAL " + error);
+                Console.WriteLine("ALGO HA SALIDO MAL ");
             }
             
         }
 
-        public static void Cinco()
+        public void Cinco()
         {
             try
             {
@@ -170,14 +171,14 @@ namespace LA_MISCELANEA_C
                 }
                 Console.WriteLine($"El resultado de la suma es {suma}");
             }
-            catch (FormatException error)
+            catch (FormatException)
             {
-                Console.WriteLine(error);
+                Console.WriteLine("ALGO HA SALIDO MAL");
             }
             
         }
 
-        public static void Seis()
+        public void Seis()
         {
             Console.WriteLine("¡¡¡RECUERDE QUE EL PRIMER NÚMERO DEBE SER MENOR QUE EL SEGUNDO!!!");
             Console.WriteLine("Ingrese el primer número");
@@ -209,25 +210,24 @@ namespace LA_MISCELANEA_C
             }
         }
 
-        public static void Siete()
+        public void Siete()
         {
-            int numero, suma = 0;
             do
             {
                 Console.WriteLine("Ingrese el número que va a sumar");
-                numero = 0;
+                variables.num1 = 0;
               try
                 {
-                    numero = Convert.ToInt32(Console.ReadLine());
+                    variables.num1 = Convert.ToInt32(Console.ReadLine());
                 }
-              catch (FormatException error)
+              catch (FormatException)
                 {
-                    Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico", error);
+                    Console.WriteLine("El valor ingresado no es válido.\nIngrese un valor de tipo numérico");
                     Console.ReadKey();
                 }
-                suma = suma + numero;
-                Console.WriteLine($"La suma hasta el momento es: {suma}");
-            } while (numero != 0);
+                variables.num2 = variables.num2 + variables.num1;
+                Console.WriteLine($"La suma hasta el momento es: {variables.num2}");
+            } while (variables.num2 != 0);
         }
 
 
