@@ -12,6 +12,11 @@ namespace LA_MISCELANEA_C
         {
             int Elec;
 
+            Operadores operadores = new Operadores(); 
+            Bucles bucles = new Bucles();
+            Condicionales condicionales = new Condicionales();
+            Arreglos arreglos = new Arreglos();
+
             do
             {
                 Console.Clear();
@@ -27,19 +32,19 @@ namespace LA_MISCELANEA_C
                 {
                     case 1:
                         {
-                            Operadores.operadores();
+                            operadores.operadores();
                         }
                         break;
 
                     case 2:
                         {
-                           Condicionales.condicionales();
+                           condicionales.condicionales();
                         }
                         break;
 
                     case 3:
                         {
-                            Bucles.bucles();
+                            bucles.bucles();
                         }
                         break;
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Herencias
 {
-    public class Automovil : I_Vehiculos
+    public class Automovil : Vehiculos
     {
         public string? Marca { get; set; }
         public string? Tipo { get; set; }

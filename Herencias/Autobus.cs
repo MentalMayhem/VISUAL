@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace Herencias
 {
-    public class Autobus : I_Vehiculos
+    public class Autobus : Vehiculos
     {
         public string? Ruta { get; set; }
+
         public int SubirPasajeros { get; set; }
 
-        public int BajarPasajeros { get; set; }
+        public int BajarPasajeros {get; set; }
         
     }
 

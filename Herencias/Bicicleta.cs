@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Herencias
 {
-    public class Bicicleta : I_Vehiculos
+    public class Bicicleta : Vehiculos
     {
         public int Cant_Radios { get; set; }
 
@@ -14,7 +14,7 @@ namespace Herencias
 
         public string? TipoAsiento { get; set; }
 
-        public string? grosor_Aros { get => grosor_Aros; set => grosor_Aros = value; }
+        public string? Grosor_Aros { get; set; }
         
     }
 }

@@ -8,7 +8,7 @@ namespace LA_MISCELANEA_C
 {
     internal class Condicionales
     {
-            public static void condicionales()
+            public void condicionales()
             {
                 int ElecOp;
 
@@ -83,151 +83,205 @@ namespace LA_MISCELANEA_C
 
             Console.ReadKey();
             }
-
-            public static void Uno()
+        Variables variables = new Variables(0, 0, 0, 0);
+        public void Uno()
+            {
+            try
             {
                 Console.WriteLine("Ingrese un numero entero");
-                double numeroCon = Convert.ToDouble(Console.ReadLine());
-                if (numeroCon > 0)
+                variables.num1 = Convert.ToDouble(Console.ReadLine());
+                if (variables.num1 > 0)
                 {
-                    Console.WriteLine($"El numero {numeroCon} es positivo");
+                    Console.WriteLine($"El numero {variables.num1} es positivo");
                 }
                 else
                 {
-                    Console.WriteLine($"El numero {numeroCon} es negativo");
+                    Console.WriteLine($"El numero {variables.num1} es negativo");
                 }
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Ingrese un valor correcto");
+            }
+              
 
             }
 
-            public static void Dos()
+       public void Dos()
             {
-
+            try
+            {
                 Console.WriteLine("Ingrese el primer numero");
-                double num1 = Convert.ToDouble(Console.ReadLine());
+                variables.num1 = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Ingrese el segundo numero");
-                double num2 = Convert.ToDouble(Console.ReadLine());
-                if (num1 > num2)
+                variables.num2 = Convert.ToDouble(Console.ReadLine());
+                if (variables.num1 > variables.num2)
                 {
-                    Console.WriteLine($"El numero {num1} es mayor que {num2}");
+                    Console.WriteLine($"El numero {variables.num1} es mayor que {variables.num2}");
                 }
-                else if (num2 > num1)
+                else if (variables.num2 > variables.num1)
                 {
-                    Console.WriteLine($"El numero {num1} es menor que {num2}");
+                    Console.WriteLine($"El numero {variables.num1} es menor que {variables.num2}");
                 }
                 else
                 {
-                    Console.WriteLine($"El numero {num1} es igual que {num2}");
+                    Console.WriteLine($"El numero {variables.num1} es igual que {variables.num2}");
                 }
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Ingrese un valor correctop");
+
+            }
+                
 
             }
 
-            public static void Tres()
+       public void Tres()
+            {
+            try
             {
                 Console.WriteLine("Ingrese el primer numero");
-                double num1 = Convert.ToDouble(Console.ReadLine());
+                variables.num1 = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Ingrese el segundo numero");
-                double num2 = Convert.ToDouble(Console.ReadLine());
+                variables.num2 = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Ingrese el tercero numero");
-                double num3 = Convert.ToDouble(Console.ReadLine());
+                variables.num3 = Convert.ToDouble(Console.ReadLine());
 
-                if (num1 > num2 && num1 > num3)
+                if (variables.num1 > variables.num2 && variables.num1 > variables.num3)
                 {
-                    Console.WriteLine($"El numero es mayor {num1}");
+                    Console.WriteLine($"El numero es mayor {variables.num1}");
                 }
-                else if (num2 > num1 && num2 > num3)
+                else if (variables.num2 > variables.num1 && variables.num2 > variables.num3)
                 {
-                    Console.WriteLine($"El numero es mayor {num2}");
+                    Console.WriteLine($"El numero es mayor {variables.num2}");
                 }
                 else
                 {
-                    Console.WriteLine($"El numero es mayor {num3}");
+                    Console.WriteLine($"El numero es mayor {variables.num3}");
                 }
                 Console.WriteLine();
 
-                if (num1 < num2 && num1 < num3)
+                if (variables.num1 < variables.num2 && variables.num1 < variables.num3)
                 {
-                    Console.WriteLine($"El numero es menor {num1}");
+                    Console.WriteLine($"El numero es menor {variables.num1}");
                 }
-                else if (num2 < num1 && num2 < num3)
+                else if (variables.num2 < variables.num1 && variables.num2 < variables.num3)
                 {
-                    Console.WriteLine($"El numero es menor {num2}");
-                }
-                else
-                {
-                    Console.WriteLine($"El numero es menor {num3}");
-                }
-            }
-
-            public static void Cuatro()
-            {
-                double resul = 0;
-                Console.WriteLine("Ingrese el primer numero");
-                double num1 = Convert.ToDouble(Console.ReadLine());
-                Console.WriteLine("Ingrese el segundo numero");
-                double num2 = Convert.ToDouble(Console.ReadLine());
-                if (num1 < num2)
-                {
-                    resul = num2 + num1;
-                    Console.WriteLine($"{num1} + {num2} = {resul}");
+                    Console.WriteLine($"El numero es menor {variables.num2}");
                 }
                 else
                 {
-                    resul = num1 - num2;
-                    Console.WriteLine($"{num1} - {num2} = {resul}");
+                    Console.WriteLine($"El numero es menor {variables.num3}");
                 }
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Ingrese un valor correcto ");
+            }
+               
+            }
+
+       public void Cuatro()
+            {
+            try
+            {
+                Console.WriteLine("Ingrese el primer numero");
+                variables.num1 = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Ingrese el segundo numero");
+                variables.num2 = Convert.ToDouble(Console.ReadLine());
+                if (variables.num1 < variables.num2)
+                {
+                    variables.num3 = variables.num2 + variables.num1;
+                    Console.WriteLine($"{variables.num1} + {variables.num2} = {variables.num3}");
+                }
+                else
+                {
+                    variables.num3 = variables.num1 - variables.num2;
+                    Console.WriteLine($"{variables.num1} - {variables.num2} = {variables.num3}");
+                }
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("ALGO HA SALIDO MAL ");
+            }
+                
 
             }
 
-            public static void Cinco()
+       public void Cinco()
             {
-                double resul = 0;
+            try
+            {
                 Console.WriteLine("Ingrese el primer numero");
-                double num1 = Convert.ToDouble(Console.ReadLine());
+                variables.num1 = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Ingrese el segundo numero");
-                double num2 = Convert.ToDouble(Console.ReadLine());
-                if (num2 != 0)
+                variables.num2 = Convert.ToDouble(Console.ReadLine());
+                if (variables.num2 != 0)
                 {
-                    resul = num1 / num2;
-                    Console.WriteLine($"{num1} / {num2} = {resul}");
+                    variables.num3 = variables.num1 / variables.num2;
+                    Console.WriteLine($"{variables.num1} / {variables.num2} = {variables.num3}");
                 }
                 else
                 {
                     Console.WriteLine("La división no es posible");
                 }
             }
-
-            public static void Seis()
+            catch (FormatException)
             {
-                double resul = 0;
-                Console.WriteLine("Ingrese el primer numero");
-                double num1 = Convert.ToDouble(Console.ReadLine());
-                Console.WriteLine("Ingrese el segundo numero");
-                double num2 = Convert.ToDouble(Console.ReadLine());
-                if (num1 < 0 || num2 < 0)
-                {
-                    resul = num1 + num2;
-                    Console.WriteLine($"{num1} + {num2} = {resul}");
-                }
-                else
-                {
-                    resul = num1 * num2;
-                    Console.WriteLine($"{num1} * {num2} = {resul}");
-                }
+                Console.WriteLine("Ingrese un valor que sea correcto");
+            }
+               
             }
 
-            public static void Siete()
+       public void Seis()
             {
-                Console.WriteLine("Ingrese el año");
-                double anio = Convert.ToDouble(Console.ReadLine());
-
-                if (anio % 4 == 0 && anio % 100 != 0 || anio % 400 == 0)
+            try
+            {
+                Console.WriteLine("Ingrese el primer numero");
+                variables.num1 = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Ingrese el segundo numero");
+                variables.num2 = Convert.ToDouble(Console.ReadLine());
+                if (variables.num1 < 0 || variables.num2 < 0)
                 {
-                    Console.WriteLine("Es bisiesto {0}\n", anio);
+                    variables.num3 = variables.num1 + variables.num2;
+                    Console.WriteLine($"{variables.num1} + {variables.num2} = {variables.num3}");
                 }
                 else
                 {
-                    Console.WriteLine("no es bisiesto {0} \n", anio);
+                    variables.num3 = variables.num1 * variables.num2;
+                    Console.WriteLine($"{variables.num1} * {variables.num2} = {variables.num3}");
                 }
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Ingrese un valor correcto");
+                Console.ReadKey();
+            }
+                
+            }
+
+       public void Siete()
+            {
+            try
+            {
+                Console.WriteLine("Ingrese el año");
+                variables.num1 = Convert.ToDouble(Console.ReadLine());
+
+                if (variables.num1 % 4 == 0 && variables.num1 % 100 != 0 || variables.num1 % 400 == 0)
+                {
+                    Console.WriteLine("Es bisiesto {0}\n", variables.num1);
+                }
+                else
+                {
+                    Console.WriteLine("no es bisiesto {0} \n", variables.num1);
+                }
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("ALGO HA SALIDO MAL ");
+            }
+              
             }
 
     }

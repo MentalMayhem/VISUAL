@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace Herencias
 {
-    public class Camion_Carga : I_Vehiculos
+    public class Camion_Carga : Vehiculos
     {
-        public int Capacidad_Carga { get; set; }
+        public double Capacidad_Carga_Kilos { get; set; }
         public string? Tipo_Mercancía { get; set; }
-
-        public  double CargarMercancia { get; set; }
-        public double DescargarMercancia { get; set; }
+        public  double CargarMercancia_Kilos { get; set; }
+        public double DescargarMercancia_Kilos { get; set; }
     }
 }
