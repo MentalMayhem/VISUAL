@@ -8,7 +8,6 @@ namespace Herencias
 {
     public class Automovil : Vehiculos
     {
-        public string? Marca { get; set; }
         public string? Tipo { get; set; }
         public string? Modelo { get; set; }
         public string? Carrocería { get; set; }

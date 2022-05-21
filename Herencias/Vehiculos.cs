@@ -10,6 +10,8 @@ namespace Herencias
     {
         public int IdVehiculo { get; set; }
         public string? uso { get; set; }
+
+        public string? Marca { get; set; }
         public string? TipoGasolina { get; set; }
         public string? TipoFrenos { get; set; }
         public string? Mat_Asientos { get; set; }
